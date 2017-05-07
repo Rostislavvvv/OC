@@ -1,7 +1,6 @@
 <?php 
 
-require "config.php"; 
-
+require "includes/config.php";
 
 
 
@@ -42,8 +41,9 @@ require "config.php";
 			$user->email = $data['email'];
 			$user->password = password_hash($data['password'],PASSWORD_DEFAULT);
 			
-			//echo '<div style="color: green;">Вы успешно зарегестрированы!<br>Можете перейти на<a href="/"> главную страницу!</a></div><hr>';
+			
 			header('Location: chat.php');
+			
 		} else
 		{
 			echo '<div style="color: red;">'.array_shift($errors).'</div><hr>';
@@ -81,7 +81,7 @@ require "config.php";
 </div>
 
 <div>
-	<p><strong>Ваш ваш пароль еще раз</strong>:</p>
+	<p><strong>Ваш пароль еще раз</strong>:</p>
 	<input class="input" type="password" name="password_2">
 </div>
 

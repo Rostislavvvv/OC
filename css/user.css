@@ -149,38 +149,6 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
-/*.chat-text-position-right {
-  width: 100%;
-  text-align: right;
-  font: 1.8rem/2rem Arial, sans-serif;
-  word-break: break-word;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: end;
-  align-items: flex-start;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: end;
-  justify-content: flex-start;
-}
-
-.message-right {
-  text-align: left;
-  max-width: 200px;
-}*/
 
 .commit-autor-name { 
 font-size: 1.4rem; 

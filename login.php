@@ -1,6 +1,7 @@
 <?php 
 
-require "config.php"; 
+
+require "includes/config.php";
 
 	$data = $_POST;
 	if ( isset($data['do_login']) )
@@ -10,16 +11,15 @@ require "config.php";
 		if ( $user) 
 		{	
 			
-			//логин существует
+			
 			if ($data['password'] == '') 
 			{
 				$errors[] = 'Введите пароль!';
 			}
 			if (  password_verify($data['password'], $user->password))
 			{
-				//пароль совпадает
+				
 				$_SESSION['logged_user'] = $user;
-				//echo '<div style="color: green;">Вы авторизованы!<br>Можете перейти на<a href="/"> главную страницу!</a></div><hr>';
 				header('Location: chat.php');
 			}else
 			{
